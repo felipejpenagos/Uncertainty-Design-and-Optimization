@@ -119,7 +119,7 @@ for  day = N+1:days-1			% loop over the trading days
                         shares_owned( day, stocks_owned ) );
 
      %%% New Block (Drawdown, Risk Management) –––––––––––––------------------------- new block (dradown %): ----------------------
-     % Added to visualize porfolio drawdown as a function of time.
+     % Added to visualize portfolio drawdown as a function of time.
      % Total portfolio value = cash + investment value
  
      total_value = value + cash;
@@ -185,7 +185,7 @@ for  day = N+1:days-1			% loop over the trading days
      %<------------------------------------------------------------------------------------------------------------------------------–
      
     % Block Pairs trading signal logic  <-------------------------------------------- new block: -------------------------------------
-    % we defined pairs trading relevant statistics (stocks 11 annd 6) above now we trade on it.
+    % we defined pairs trading relevant statistics (stocks 11 and 6) above now we trade on it.
 
      z = zscore(day);
      z_entry_threshold = -1.3;
